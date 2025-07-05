@@ -111,7 +111,9 @@ major_discipline (813 missing)
 Filling Missing Values with Mode:
 
 ✅ Filled missing values in 'enrolled_university' with mode: no_enrollment
+
 ✅ Filled missing values in 'education_level' with mode: Graduate
+
 ✅ Filled missing values in 'major_discipline' with mode: STEM
 
 Unique Value Exploration
@@ -131,8 +133,11 @@ last_new_job (321 records)
 The missing values are experience , company_size, company_type, last_new_job columns. So handling them one by mode for each one.
 
 ✅ Filled missing values in 'experience' with mode: >20
+
 ✅ Filled missing values in 'company_size' with mode: 50-99
+
 ✅ Filled missing values in 'company_type' with mode: Pvt Ltd
+
 ✅ Filled missing values in 'last_new_job' with mode: 1
 
 Exploring Unique Values (Category Distribution)
