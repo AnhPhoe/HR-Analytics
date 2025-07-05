@@ -109,6 +109,7 @@ education_level (270 missing)
 major_discipline (813 missing)
 
 Filling Missing Values with Mode:
+
 ✅ Filled missing values in 'enrolled_university' with mode: no_enrollment
 ✅ Filled missing values in 'education_level' with mode: Graduate
 ✅ Filled missing values in 'major_discipline' with mode: STEM
@@ -128,6 +129,7 @@ company_type (1,840 records)
 last_new_job (321 records)
 
 The missing values are experience , company_size, company_type, last_new_job columns. So handling them one by mode for each one.
+
 ✅ Filled missing values in 'experience' with mode: >20
 ✅ Filled missing values in 'company_size' with mode: 50-99
 ✅ Filled missing values in 'company_type' with mode: Pvt Ltd
@@ -143,6 +145,7 @@ Overview:
 Dataset contains 19,158 rows with 2 fields:
 enrollee_id: unique identifier
 training_hours: number of hours each enrollee has undergone training
+
 📌 No missing values are present, both columns are in int64 format.
 
 This summary provides essential statistical indicators:
@@ -150,6 +153,7 @@ Mean: 65.37 hours
 Median (50%): 47 hours
 Standard Deviation: 60.06 hours (relatively high dispersion)
 Max value: 336 hours
+
 🧠 This suggests the presence of potential outliers, especially on the upper end.
 
 ##### Outlier Detection Function – IQR Method
@@ -174,16 +178,20 @@ Overview:
 The dataset contains 19,158 rows and 2 columns:
 enrollee_id: unique identifier for each individual (currently int64)
 employed: employment status (likely binary or boolean-style encoded as float64)
+
 ✅ No missing values in either column
+
 📌 employed is likely a target variable in a classification problem (e.g., predicting job status)
 
 Data Type Conversion for ID Field
 
 ### 4 Load Data:
+
 💾 SQLite Data Warehouse Export
 This code exports all cleaned and preprocessed DataFrames to an SQLite database called data_warehouse.db, creating a lightweight yet queryable data warehouse structure.
 Initializes a connection to a local SQLite database
 Enables Pandas to interact with SQL seamlessly using SQLAlchemy
+
 📋 Tables Written to Database
 
 
